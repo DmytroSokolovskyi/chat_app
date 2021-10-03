@@ -1,0 +1,29 @@
+.userSide {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    background-color: sienna;
+}
+
+.headerUser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid gray;
+    background-color: rgba(7, 161, 7, 0.5);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    background-color: gold;
+    padding: 0 8px;
+    overflow-y: auto;
+}
