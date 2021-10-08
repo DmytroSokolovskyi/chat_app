@@ -1,0 +1,24 @@
+.mainHeaderUser {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.divImg {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+}
+
+.searchChat {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+

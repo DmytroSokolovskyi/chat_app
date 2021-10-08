@@ -3,23 +3,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: cadetblue;
+    /*align-items: center;*/
     /*todo забрати падинг*/
     padding: 10px 20px;
 }
 
 main {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 90%;
-    background-color: coral;
 }
 
 footer {
     width: 100%;
     height: 3%;
-    background-color: #b9b7b7;
+    background-color: #d9d7d7;
+    border-top: 1px solid gray;
 }
