@@ -1,11 +1,11 @@
-import cl from './ContactMini.module.css';
+import cl from "./ContactMini.module.css";
 
 export default function ContactMini(props) {
     const {contact, params, choseContactChat} = props;
 
     const sendChoseId = () => {
         if (choseContactChat)
-        choseContactChat(contact.id);
+            choseContactChat(contact.id);
     };
 
     return (
@@ -18,4 +18,4 @@ export default function ContactMini(props) {
             <div className={cl.loginContactMini}>{contact.login}</div>
         </div>
     );
-}
+};

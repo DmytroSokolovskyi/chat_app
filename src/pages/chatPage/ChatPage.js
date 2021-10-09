@@ -1,16 +1,16 @@
-import cl from './ChatPage.module.css';
-import {Redirect, Route, Switch} from "react-router-dom";
-
+import cl from "./ChatPage.module.css";
+import { Route, Switch} from "react-router-dom";
 import ChadSide from "../../components/chadSide/ChadSide";
 import UserSide from "../../components/userSide/UserSide";
 
 export default function ChatPage() {
+
     return (
         <div className={cl.mainDivChatPage}>
             <main>
                 <UserSide/>
                 <Switch>
-                    <Route exact path={'/:id'} render={(props) => {
+                    <Route exact path={"/:id"} render={(props) => {
                         return <ChadSide {...props}/>;
                     }}/>
                 </Switch>

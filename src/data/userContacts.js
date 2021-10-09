@@ -40,7 +40,7 @@ export const userContacts = [
     {
         id: "sam",
         login: "Sam",
-        online: true,
+        online: false,
         photo: 'https://shutnikov.club/wp-content/uploads/2019/12/d8101369d30a97bd46010f5c8dafcf00.png',
         massages: [
             {sender: true, time: '2020-03-01T19:15:01+02:00', value: "Mr. Bilbo, where are you off to?" },
@@ -52,7 +52,7 @@ export const userContacts = [
     {
         id: "samantha",
         login: "Samantha",
-        online: true,
+        online: false,
         photo: 'https://shutnikov.club/wp-content/uploads/2019/12/250625144016212.png',
         massages: [
             {sender: true, time: '2020-09-03T19:45:01+02:00', value: "Dude, you jumped off a building." },

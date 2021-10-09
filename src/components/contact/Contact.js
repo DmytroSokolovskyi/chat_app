@@ -21,4 +21,4 @@ export default function Contact({contact, choseContact, contact: {login, online,
             </div>
         </div>
     );
-}
+};

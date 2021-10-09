@@ -6,7 +6,7 @@ export const createNewContact = (login) => (dispatch) => {
         id: login.toLowerCase(),
         login: login,
         online: true,
-        photo: '',
+        photo: "",
         massages: [{
             sender: false,
             time: moment().format(),
@@ -21,7 +21,7 @@ export const findChoseContact = (contacts, id) => (dispatch) => {
 };
 
 export const createMsg = (id, msg) => (dispatch) => {
-    const userMsg = {sender: false, time: moment().format(), value: msg}
+    const userMsg = {sender: false, time: moment().format(), value: msg};
     dispatch(setMsg({id, userMsg}));
 };
 
