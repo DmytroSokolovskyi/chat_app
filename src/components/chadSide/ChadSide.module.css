@@ -17,6 +17,8 @@
     height: 10%;
     border-bottom: 1px solid gray;
     background-color: #d9d7d7;
+    color: #252222;
+    font-size: 18px;
 }
 
 .chatByContact {

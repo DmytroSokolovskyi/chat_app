@@ -3,7 +3,7 @@ import WriteMSG from "../writeMSG/WriteMSG";
 import {useDispatch, useSelector} from "react-redux";
 import ContactMini from "../contactMini/ContactMini";
 import ChatMessage from "../chatMessage/ChatMessage";
-import {memo, useEffect} from "react";
+import {memo} from "react";
 import {getJoke} from "../../services";
 import {useFetch} from "../../hooks";
 

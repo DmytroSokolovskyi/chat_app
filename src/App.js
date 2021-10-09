@@ -1,17 +1,17 @@
-import {
-    BrowserRouter as Router, Redirect, Route, Switch,
-} from "react-router-dom";
-import ChatPage from "./pages/chatPage/ChatPage";
+import {BrowserRouter, BrowserRouter as Router} from "react-router-dom";
+import "./App.css";
+
+import AppRouter from "./components/appRouter/AppRouter";
 
 function App() {
+
     return (
-        <Router>
-            <Switch>
-                {/*<Route path={'/login'} component={Login}/>*/}
-                <Route path={'/'} component={ChatPage}/>
-            </Switch>
-        </Router>
+        <BrowserRouter>
+            <Router>
+                <AppRouter/>
+            </Router>
+        </BrowserRouter>
     );
-};
+}
 
 export default App;

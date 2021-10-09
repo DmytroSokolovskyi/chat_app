@@ -20,5 +20,23 @@
     align-items: center;
 }
 
+.authDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 80%;
+}
+
+.nameDiv {
+    color: #252222;
+    font-size: 18px;
+}
+
+.button {
+    cursor: pointer;
+    height: 35%;
+    width: 20%;
+}
 
 

@@ -13,7 +13,9 @@ export default memo(function InputSearch() {
         const history = useHistory();
         const {contacts} = mainReducer;
         const [fetchJoke] = useFetch();
+
         const searchContacts = contacts.filter(item => item.login.toLowerCase().includes(inputSearch.toLowerCase()));
+
         const onSearch = (e) => {
             setInputSearch(e.target.value);
         };
@@ -21,7 +23,7 @@ export default memo(function InputSearch() {
         const newContact = (e) => {
             e.preventDefault();
             dispatch(createNewContact(inputSearch));
-            history.push(inputSearch.toLowerCase());
+            history.push(`${inputSearch.toLowerCase()}`);
             setInputSearch('');
             setTimeout(() => {
                 fetchJoke(dispatch(getJoke(inputSearch)))
@@ -29,7 +31,7 @@ export default memo(function InputSearch() {
         }
 
         const choseContactChat = (id) => {
-            history.push(id.toLowerCase());
+         history.push(`${id}`);
             dispatch(findChoseContact(contacts, id));
             setInputSearch('');
         }

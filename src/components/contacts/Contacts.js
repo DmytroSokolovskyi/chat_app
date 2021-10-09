@@ -3,7 +3,7 @@ import Contact from "../contact/Contact";
 import moment from "moment";
 import {useHistory} from "react-router";
 import {findChoseContact} from "../../services";
-import {useEffect, useRef, useState} from "react";
+import {useEffect} from "react";
 import {setState} from "../../redux/actions";
 
 export default function Contacts() {
@@ -12,18 +12,18 @@ export default function Contacts() {
     const dispatch = useDispatch();
     const {contacts} = mainReducer;
 
-    useEffect  (async () => {
+    useEffect(() => {
             const state = JSON.parse(localStorage.getItem('state'));
 
             if (state !== null) {
                 dispatch(setState(state));
             }
         },
-        []);
+        [dispatch]);
 
     const choseContact = (id) => {
-        history.push(id.toLowerCase());
         dispatch(findChoseContact(contacts, id));
+        history.push(`${id}`);
         localStorage.setItem("state", JSON.stringify({...mainReducer}));
     }
 

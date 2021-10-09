@@ -1,7 +1,7 @@
 import {userContacts} from "../../data";
-import {SET_CHAT, SET_CONTACT, SET_MSG, SET_STATE} from "../actions";
+import {SET_AUTH, SET_CHAT, SET_CONTACT, SET_MSG, SET_STATE, SET_USER} from "../actions";
 
-let initialState = {contacts: userContacts, chosenContact: '', auth: false};
+let initialState = {contacts: userContacts, chosenContact: '', auth: false, user: {}};
 
 export const mainReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -25,8 +25,15 @@ export const mainReducer = (state = initialState, action) => {
         }
 
         case SET_STATE: {
-            console.log(action.payload)
             return {...action.payload}
+        }
+
+        case SET_USER: {
+            return {...state, user: action.payload}
+        }
+
+        case SET_AUTH: {
+          return {...state, auth: action.payload}
         }
 
         default:

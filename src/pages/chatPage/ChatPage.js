@@ -10,7 +10,7 @@ export default function ChatPage() {
             <main>
                 <UserSide/>
                 <Switch>
-                    <Route exact path={"/:id"} render={(props) => {
+                    <Route exact={true} path={"/:id"} render={(props) => {
                         return <ChadSide {...props}/>;
                     }}/>
                 </Switch>
